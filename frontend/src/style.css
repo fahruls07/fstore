@@ -1,0 +1,32 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f6f6f6;
+}
+.hero {
+  background: linear-gradient(135deg, #1e40af, #2563eb);
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+}
+.cta-button {
+  background: white;
+  color: #1e40af;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+.fitur, .formulir {
+  background: white;
+  padding: 40px 20px;
+  margin: 20px;
+  border-radius: 10px;
+}
+form input, form button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+}

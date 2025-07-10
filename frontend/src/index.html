@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gabung Reseller UniPlay</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="hero">
+    <h1>Gabung Jadi Reseller UniPlay Sekarang!</h1>
+    <p>Mulai bisnis topup game dengan mudah dan cepat.</p>
+    <a href="#form" class="cta-button">Daftar Sekarang</a>
+  </section>
+
+  <section class="fitur">
+    <h2>Kenapa Pilih UniPlay?</h2>
+    <ul>
+      <li>✅ Harga Bersaing</li>
+      <li>✅ Transaksi Cepat</li>
+      <li>✅ Banyak Pilihan Game</li>
+    </ul>
+  </section>
+
+  <section id="form" class="formulir">
+    <h2>Formulir Pendaftaran</h2>
+    <form action="http://backend:5000/submit" method="POST">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required />
+      <input type="email" name="email" placeholder="Email Aktif" required />
+      <input type="tel" name="wa" placeholder="No WhatsApp" required />
+      <button type="submit">Kirim</button>
+    </form>
+  </section>
+</body>
+</html>
