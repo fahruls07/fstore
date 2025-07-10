@@ -8,28 +8,57 @@
 </head>
 <body>
   <section class="hero">
-    <h1>Gabung Jadi Reseller UniPlay Sekarang!</h1>
-    <p>Mulai bisnis topup game dengan mudah dan cepat.</p>
-    <a href="#form" class="cta-button">Daftar Sekarang</a>
+    <div class="content">
+      <h1>Gabung Jadi Reseller Topup Game</h1>
+      <p>Dapatkan harga termurah, layanan cepat & support penuh dari UniPlay!</p>
+      <a href="#form" class="cta">Daftar Sekarang</a>
+    </div>
   </section>
 
-  <section class="fitur">
-    <h2>Kenapa Pilih UniPlay?</h2>
-    <ul>
-      <li>✅ Harga Bersaing</li>
-      <li>✅ Transaksi Cepat</li>
-      <li>✅ Banyak Pilihan Game</li>
-    </ul>
+  <section class="keuntungan">
+    <h2>Keuntungan Jadi Reseller</h2>
+    <div class="grid">
+      <div class="box">
+        <h3>Harga Termurah</h3>
+        <p>Dapatkan keuntungan maksimal dari setiap transaksi.</p>
+      </div>
+      <div class="box">
+        <h3>Transaksi Otomatis</h3>
+        <p>Topup instan, tidak perlu tunggu lama.</p>
+      </div>
+      <div class="box">
+        <h3>Support Ramah</h3>
+        <p>Kami siap bantu kamu 24 jam penuh setiap hari.</p>
+      </div>
+    </div>
   </section>
 
   <section id="form" class="formulir">
-    <h2>Formulir Pendaftaran</h2>
+    <h2>Formulir Pendaftaran Reseller</h2>
     <form action="http://backend:5000/submit" method="POST">
       <input type="text" name="nama" placeholder="Nama Lengkap" required />
       <input type="email" name="email" placeholder="Email Aktif" required />
-      <input type="tel" name="wa" placeholder="No WhatsApp" required />
-      <button type="submit">Kirim</button>
+      <input type="tel" name="wa" placeholder="Nomor WhatsApp" required />
+      <button type="submit">Gabung Sekarang</button>
     </form>
   </section>
+
+  <section class="faq">
+    <h2>Pertanyaan Umum</h2>
+    <details>
+      <summary>Berapa modal awal jadi reseller?</summary>
+      <p>Tidak ada minimal deposit. Bisa mulai dari Rp10.000.</p>
+    </details>
+    <details>
+      <summary>Game apa saja yang bisa di-topup?</summary>
+      <p>Mobile Legends, Free Fire, PUBG, Genshin, dan masih banyak lagi.</p>
+    </details>
+    <details>
+      <summary>Apakah tersedia support jika saya butuh bantuan?</summary>
+      <p>Ya! Tim kami tersedia 24/7 melalui WhatsApp.</p>
+    </details>
+  </section>
+
+  <script src="script.js"></script>
 </body>
 </html>
