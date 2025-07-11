@@ -1,5 +1,2 @@
-# Build static assets only
-FROM alpine:latest as builder
-WORKDIR /app
-COPY ./src /app
-
+FROM nginx:alpine
+COPY ./src /usr/share/nginx/html
