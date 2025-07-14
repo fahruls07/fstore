@@ -7,56 +7,102 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <section class="hero">
-    <div class="content">
-      <h1>Gabung Jadi Reseller Topup Game</h1>
-      <p>Dapatkan harga termurah, layanan cepat & support penuh dari FStore!</p>
-      <a href="#form" class="cta">Daftar Sekarang</a>
+<header class="hero">
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="logo.png" alt="FStore Logo" class="logo" />
     </div>
-  </section>
+    <ul class="navbar-menu">
+      <li><a href="#fitur">Fitur</a></li>
+      <li><a href="#cara">Cara Daftar</a></li>
+      <li><a href="#testimoni">Testimoni</a></li>
+      <li><a href="#faq">Tanya Jawab</a></li>
+    </ul>
+    <div class="navbar-right">
+      <a href="#form" class="btn btn-orange">Daftar Reseller</a>
+    </div>
+  </nav>
 
-  <section class="keuntungan">
-    <h2>Keuntungan Jadi Reseller</h2>
-    <div class="grid">
-      <div class="box">
-        <h3>Harga Termurah</h3>
-        <p>Dapatkan keuntungan maksimal dari setiap transaksi.</p>
+  <div class="testimoni-bar">
+    <div class="testi">
+      ⭐⭐⭐⭐⭐<br />
+      <span>“semua sudah disiapkan”</span>
+    </div>
+    <div class="testi">
+      ⭐⭐⭐⭐⭐<br />
+      <span>“profit tembus 10 juta sebulan”</span>
+    </div>
+    <div class="testi">
+      ⭐⭐⭐⭐⭐<br />
+      <span>“pilihan game-nya lengkap”</span>
+    </div>
+  </div>
+
+  <h1>Buat Website Top Up Game<br /><span>Kamu Sendiri</span></h1>
+  <p>Dapatkan website jualan gratis dan mulai bisnis top up game dalam hitungan menit.</p>
+  <div class="buttons">
+    <a href="#form" class="btn btn-orange">Daftar Reseller</a>
+    <a href="#paket" class="btn btn-white">Harga Modal</a>
+  </div>
+</header>
+
+<div class="slider-container">
+  <div class="slide active">
+    <img src="http://backend:5000/images/image1.jpeg" alt="Slide 1" onerror="this.onerror=null; this.src='/default.png';">
+  </div>
+  <div class="slide">
+    <img src="http://backend:5000/images/image2.webp" alt="Slide 2" onerror="this.onerror=null; this.src='/default.png';">
+  </div>
+  <div class="slide">
+    <img src="http://backend:5000/images/image3.png" alt="Slide 3" onerror="this.onerror=null; this.src='/default.png';">
+  </div>
+</div>
+
+  <section id="paket" class="pricing">
+    <h2>HARGA PAKET</h2>
+    <p>Bergabung Jadi Reseller dengan Harga Terbaik!</p>
+    <div class="paket-grid">
+      <div class="paket-card legend">
+        <h3>Legend</h3>
+        <p class="price">IDR 74.833/bulan</p>
+        <ul>
+          <li>Profit up to 80%</li>
+          <li>Nama Domain Sendiri</li>
+          <li>Website Premium</li>
+        </ul>
+        <a href="#form" class="btn btn-orange">Daftar Sekarang</a>
       </div>
-      <div class="box">
-        <h3>Transaksi Otomatis</h3>
-        <p>Topup instan, tidak perlu tunggu lama.</p>
+      <div class="paket-card pro">
+        <h3>Pro</h3>
+        <p class="price">IDR 49.833/bulan</p>
+        <ul>
+          <li>Website simple, untuk jualan</li>
+          <li>Domain Gratis</li>
+          <li>Produk Lengkap</li>
+        </ul>
+        <a href="#form" class="btn btn-orange">Daftar Sekarang</a>
       </div>
-      <div class="box">
-        <h3>Support Ramah</h3>
-        <p>Kami siap bantu kamu 24 jam penuh setiap hari.</p>
+      <div class="paket-card newbie">
+        <h3>Newbie</h3>
+        <p class="price">IDR 24.833/bulan</p>
+        <ul>
+          <li>Cocok untuk pemula</li>
+          <li>Auto Order</li>
+          <li>Produk Populer</li>
+        </ul>
+        <a href="#form" class="btn btn-orange">Daftar Sekarang</a>
       </div>
     </div>
   </section>
 
   <section id="form" class="formulir">
     <h2>Formulir Pendaftaran Reseller</h2>
-    <form action="http://backend:5000/submit" method="POST">
+    <form action="/submit" method="POST">
       <input type="text" name="nama" placeholder="Nama Lengkap" required />
       <input type="email" name="email" placeholder="Email Aktif" required />
       <input type="tel" name="wa" placeholder="Nomor WhatsApp" required />
-      <button type="submit">Ayo Gabung Sekarang!</button>
+      <button type="submit">Gabung Sekarang</button>
     </form>
-  </section>
-
-  <section class="faq">
-    <h2>Pertanyaan Umum</h2>
-    <details>
-      <summary>Berapa modal awal jadi reseller?</summary>
-      <p>Tidak ada minimal deposit. Bisa mulai dari Rp10.000.</p>
-    </details>
-    <details>
-      <summary>Game apa saja yang bisa di-topup?</summary>
-      <p>Mobile Legends, Free Fire, PUBG, Genshin, dan masih banyak lagi.</p>
-    </details>
-    <details>
-      <summary>Apakah tersedia support jika saya butuh bantuan?</summary>
-      <p>Ya! Tim kami tersedia 24/7 melalui WhatsApp.</p>
-    </details>
   </section>
 
   <script src="script.js"></script>
