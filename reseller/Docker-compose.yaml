@@ -1,0 +1,38 @@
+version: '3.8'
+
+services:
+  nginx:
+    build:
+      context: ./nginx
+    container_name: fstore_nginx
+    ports:
+      - "80:80"
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - fstore_net
+
+  frontend:
+    build:
+      context: ./frontend
+    container_name: fstore_frontend
+    expose:
+      - "80"
+    networks:
+      - fstore_net
+
+  backend:
+    build:
+      context: ./backend
+    container_name: fstore_backend
+    expose:
+      - "5000"
+    volumes:
+      - ./backend/static:/app/static
+    networks:
+      - fstore_net
+
+networks:
+  fstore_net:
+    driver: bridge
